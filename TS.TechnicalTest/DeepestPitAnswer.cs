@@ -19,6 +19,9 @@ public static class DeepestPitAnswer
            
            if(q == p) continue;
 
+           var r = q;
+          
+
         }
     }
 }
