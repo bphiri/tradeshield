@@ -20,7 +20,10 @@ public static class DeepestPitAnswer
            if(q == p) continue;
 
            var r = q;
-          
+           while (r +1 <  points.Length &&  points[r] <= points[r + 1])
+           {
+               r++;
+           }
 
         }
     }
