@@ -3,7 +3,7 @@
 namespace TS.UnitTests;
 
 [TestClass]
-public class LongestSentanceTests
+public class LongestSentenceTests
 {
     [TestMethod]
     public void Q1_BasicNominalTest()

@@ -12,12 +12,7 @@ public static class LongestSentenceAnswer
         foreach (var question in questions)
         {
             var words = question.Split([' '], StringSplitOptions.RemoveEmptyEntries).Where(word => word.Any(char.IsLetter));
-            var wordCount = words.Count();
-            if (wordCount > maximumWords)
-            {
-                maximumWords = wordCount;
-            }
-            
+            maximumWords = Math.Max(words.Count(), maximumWords);
         }
         return maximumWords;
         
