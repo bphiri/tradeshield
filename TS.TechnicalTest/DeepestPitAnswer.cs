@@ -24,6 +24,8 @@ public static class DeepestPitAnswer
            {
                r++;
            }
+           
+           if(r == q) continue;
 
         }
     }
