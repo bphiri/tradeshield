@@ -6,6 +6,7 @@ public static class DeepestPitAnswer
     {
         if (points is { Length : < 3 }) return -1;
 
+        var maximumDepth = -1;
         for (var p = 0;  p < points.Length - 2 ; p ++)
         {
            if(points[p] <= 0) continue;
