@@ -26,6 +26,9 @@ public static class DeepestPitAnswer
            }
            
            if(r == q) continue;
+           
+           var left = points[p] - points[q];
+           var right = points[r] - points[q];
 
         }
     }
