@@ -11,7 +11,8 @@ public static class LongestSentenceAnswer
         
         foreach (var question in questions)
         {
-            var words = s.Split([' '], StringSplitOptions.RemoveEmptyEntries);
+            var words = s.Split([' '], StringSplitOptions.RemoveEmptyEntries).Where(word => word.Any(char.IsLetter));
+            
         }
         
         
