@@ -8,8 +8,16 @@ public static class DeepestPitAnswer
 
         for (var p = 0;  p < points.Length - 2 ; p ++)
         {
-           if(points[p] <= 0) continue; 
-             
+           if(points[p] <= 0) continue;
+
+           var q = p ;
+           while (q +1 <  points.Length &&  points[q] <= points[q + 1])
+           {
+               q++;
+           }
+           
+           if(q == p) continue;
+
         }
     }
 }
