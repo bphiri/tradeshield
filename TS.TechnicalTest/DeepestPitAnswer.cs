@@ -1,9 +1,9 @@
 ﻿namespace TS.TechnicalTest;
 
-public class DeepestPitAnswer
+public static class DeepestPitAnswer
 {
     public static int Solution(int[] points)
     {
-        throw new NotImplementedException("Not completed yet");
+        if (points is { Length : < 3 }) return -1;
     }
 }

@@ -13,4 +13,13 @@ public class LongestSentenceTests
 
         Assert.AreEqual(4, outcome);
     }
+    
+    [TestMethod]
+    public void Q1_BasicNominalTest2()
+    {
+        var input = $"Forget CVs..Save time . x x”";
+        var outcome = LongestSentenceAnswer.Solution(input);
+
+        Assert.AreEqual(2, outcome);
+    }
 }
