@@ -20,6 +20,6 @@ public class DeepestPitTests
         var points = new[] {1, 2, 3, 1, 2, 3, 1, 2, 3};
         var result = DeepestPitAnswer.Solution(points);
 
-        Assert.AreEqual(4, result);
+        Assert.AreEqual(2, result);
     }
 }
