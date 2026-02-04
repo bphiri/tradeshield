@@ -29,7 +29,10 @@ public static class DeepestPitAnswer
            
            var left = points[p] - points[q];
            var right = points[r] - points[q];
+           var depth = Math.Max(left, right);
+           maximumDepth = Math.Max(maximumDepth, depth);
 
         }
+        return maximumDepth;
     }
 }
